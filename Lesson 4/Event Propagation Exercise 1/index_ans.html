@@ -1,0 +1,32 @@
+<!-- Give me a basic webpage with some header and some paragraphs -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Welcome to my first webpage!</h1>
+        <div id="div">
+            <spa id="span">
+                <button id="clickMe">Click me!</button>
+            </span>
+        </div>
+    </body>
+
+    <script>
+        // ----- Modify the code below this line -----
+        let alertButton = document.getElementById('clickMe');
+        alertButton.addEventListener('click', function() { 
+            alert('button was clicked!'); 
+        });
+
+        let spanClick = document.getElementById('span');
+        spanClick.addEventListener('click', function() { 
+            alert('span was clicked!'); 
+        });
+        
+        let divClick = document.getElementById('div');
+        divClick.addEventListener('click', function() { 
+            alert('div was clicked!'); 
+        });
+
+        // ----- Modify the code above this line -----
+    </script>
+</html>

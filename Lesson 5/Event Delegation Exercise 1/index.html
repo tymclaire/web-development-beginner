@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+            <button>Button 4</button>
+        </div>
+    </body>
+    
+    <script>
+        const div = document.querySelector('div');
+        div.addEventListener("click", (event) => {
+            if(event.target.innerText === 'Button 1') {
+                alert(event.target.innerText + " was clicked");
+            }
+            // ----- Add your code below this line here -----
+            
+            // ----- Add your code above this line here -----
+        });
+    </script>
+
+</html>

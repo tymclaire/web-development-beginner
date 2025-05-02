@@ -1,0 +1,34 @@
+<!-- Give me a basic webpage with some header and some paragraphs -->
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        <title>My First Webpage</title>
+    </head>
+    <body>
+        <h1>Welcome to my first webpage!</h1>
+        <p id="print">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <p>This is a third paragraph.</p>
+
+        <h1>Another header</h1>
+        <p id="special">This is a fourth paragraph.</p>
+    </body>
+
+    <script>
+        // ----- Modify the code below this line -----
+        let childToBeRemoved = document.getElementById("special");
+        document.body.removeChild(childToBeRemoved);
+
+        let newList = document.createElement("ul");
+        let listItem1 = document.createElement("li");
+        listItem1.textContent = "This is the first item in the list.";
+        let listItem2 = document.createElement("li");
+        listItem2.textContent = "This is the second item in the list.";
+        newList.appendChild(listItem1);
+        newList.appendChild(listItem2);
+
+        document.body.insertBefore(newList, document.getElementById("print"));
+        // ----- Modify the code above this line -----
+    </script>
+</html>

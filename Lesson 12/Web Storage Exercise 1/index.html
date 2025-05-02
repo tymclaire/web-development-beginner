@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Storage Example</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <form id="userForm">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="feelings">How are you feeling today?</label>
+        <input type="text" id="feelings" name="feelings" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Stored Information</h2>
+    <p id="displayName"></p>
+    <p id="displayFeelings"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

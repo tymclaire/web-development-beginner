@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project</title>
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Application</h1>
+    </header>
+    
+    <main>
+        <section id="user-section">
+            <h2>User Information</h2>
+            <form id="user-form">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="feelings">How are you feeling today?</label>
+                <input type="text" id="feelings" name="feelings" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="user-display">
+                <h3>Your Information:</h3>
+                <p>Name: <span id="display-name"></span></p>
+                <p>Feelings: <span id="display-feelings"></span></p>
+            </div>
+        </section>
+
+        <section id="data-section">
+            <h2>Data from API</h2>
+            <button id="fetch-data">Fetch Data</button>
+            <div id="data-display">
+                <!-- Fetched data will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

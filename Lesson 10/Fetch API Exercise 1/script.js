@@ -1,0 +1,24 @@
+async function fetchData() {
+    try {
+        let response = await fetch('https://api.sampleapis.com/countries/countries');
+        let data = await response.json();
+        console.log(data);
+        let ul = document.createElement('ul');
+        document.body.appendChild(ul);
+        
+        
+        //Add each country name as a list item to the unordered list
+        data.forEach(country => {
+            //create a list item
+            
+            //Add the country name to the list item as text content
+            
+
+            //Add the list item to the unordered list
+            
+        });
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+fetchData();

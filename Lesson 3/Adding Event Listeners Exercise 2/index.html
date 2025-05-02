@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyup Event Listener Exercise</title>
+</head>
+<body>
+    <h2>Type Your Message</h2>
+    <input type="text" id="userInput" placeholder="Type something here...">
+    <p>Your message: <span id="displayText"></span></p>
+    
+    <script>
+        // Get references to the input field and display area
+        const userInput = document.getElementById('userInput');
+        const displayText = document.getElementById('displayText');
+
+        // Add a keyup event listener to the input field, change this to show the length of the input
+        userInput.addEventListener('keyup', function(event) {
+            // -------------- Modify the code below --------------
+            // Display the current value of the input field
+            displayText.textContent = event.target.value;
+            // -------------- Modify the code above --------------
+        });
+    </script>
+</body>
+</html>

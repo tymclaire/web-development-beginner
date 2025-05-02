@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button id="myButton">Click Me!</button>
+    </body>
+    <script>
+        document.getElementById('myButton').addEventListener('click', function(event) {
+        alert('Event type: ' + event.type);
+        alert('Event target: ' + event.target.tagName);
+        alert('Event current target: ' + event.currentTarget.tagName);
+        });
+    </script>
+
+</html>
